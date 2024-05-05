@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var date1=new Date("mm-dd-yyyy")
+        // if()
+        // document.write(`${date1.getDate()} ${date1.getMonth()} ${date1.getFullYear()}`);
+        // // document.write(date1)
+
+        var today = new Date();
+    var month = today.getMonth() + 1;
+    var day = today.getDate();
+    var year = today.getFullYear();
+    var mmddyyyy = month + '-' + day + '-' + year;
+    var mmddslashyyyy = month + '/' + day + '/' + year;
+    var ddmmyyyy = day + '/' + month + '/' + year;
+    var ddmmdashyyyy = day + '-' + month + '-' + year;
+    var output = "mm-dd-yyyy: " + mmddyyyy + "<br>" +"mm/dd/yyyy: " + mmddslashyyyy + "<br>" +"dd/mm/yyyy: " + ddmmyyyy + "<br>" +"dd-mm-yyyy: " + ddmmdashyyyy;
+
+    document.write(output);
+    </script>
+</body>
+</html>
